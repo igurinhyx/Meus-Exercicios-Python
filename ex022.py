@@ -1,0 +1,8 @@
+nome = str(input('Qual é o seu nome?'))
+mai = nome.strip().upper()
+minu = nome.strip().lower()
+letr = (''.join(nome))
+todo = (len(letr))
+print ('O nome é assim: {} | Em maiusculas'.format(mai))
+print ('O nome é assim: {} | Em minusculas'.format(minu))
+print ('O nome tem {} ao todo, sem os espaços'.format(todo))
