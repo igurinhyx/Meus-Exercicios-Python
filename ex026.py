@@ -1,2 +1,5 @@
-frase = input('Digite uma frase: ')
-contagem = frase.count('a')
+frase = str(input('Digite uma frase: ')).strip()
+frase_certa = frase.lower()
+print('A letra "a" aparece: {} vezes'.format(frase_certa.count('a')))
+print('A letra "a" se encontra a primeira vez exatamente na posição: {}'.format(frase_certa.find('a')))
+print('A letra "a" se encontra a ultima vez exatamente na posição: {}'.format(frase_certa.rfind('a')))
