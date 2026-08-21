@@ -17,7 +17,8 @@ Os exercícios estão organizados por tema, seguindo a progressão do curso:
 | `ex005` a `ex015` | Operadores aritméticos              |
 | `ex016` a `ex021` | Utilizando módulos                  |
 | `ex022` a `ex027` | Manipulação de caracteres (strings) |
-| `ex028` a `ex035` | Condições (PARTE 1)                 |
+| `ex028` a `ex035` | Condições (PARTE 1) if e else       |
+| `ex036` a `ex045` | Condições (PARTE 2) if, elif e else |
 
 > Este README será atualizado conforme novos exercícios forem adicionados.
 
