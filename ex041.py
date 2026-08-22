@@ -2,11 +2,11 @@ import datetime
 import time
 
 print('\033[1;36m-=-\033[m'*20)
-print('\033[1mCONFEDERAÇÃO NACIONAL DE NATAÇÃO\033[m'*20)
+print('\033[1mCONFEDERAÇÃO NACIONAL DE NATAÇÃO\033[m')
 print('\033[1;36m-=-\033[m'*20)
 time.sleep(2)
 
-nome_atleta = str(input('\033[1m\033[m')).strip().split()
+nome_atleta = str(input('\033[1mDIGITE O NOME DO ATLETA: \033[m')).strip().split()
 time.sleep(2)
 
 print('\033[1mDIGITE A DATA DE NASCIMENTO DO {}\033[m'.format(nome_atleta[0]))
@@ -17,7 +17,7 @@ hoje = datetime.date.today().year
 time.sleep(2)
 
 print('\033[1;36m-=-\033[m'*20)
-print('\033[1mPROCESSANDO...\033[m'*20)
+print('\033[1mPROCESSANDO...\033[m')
 print('\033[1;36m-=-\033[m'*20)
 time.sleep(5)
 
