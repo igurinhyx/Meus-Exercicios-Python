@@ -69,7 +69,7 @@ if media < 5.0:
     print('Situação ({}): \033[1;31mREPROVADO(A)\033[m'.format(nome_aluno[0]))
     print('MÉDIA DO ALUNO(a): \033[1;31m{:.2f}\033[m'.format(media))
     print('MÉDIA NECESSÁRIA: \033[1;31m5.0\033[m')
-elif media >= 5.0 and 5.0 < 7.0:
+elif 5.0 > media <= 7.0:
     print('Situação ({}): \033[1;33mRECUPERAÇÃO\033[m'.format(nome_aluno[0]))
     print('MÉDIA DO ALUNO(a): \033[1;33m{:.2f}\033[m'.format(media))
     print('MÉDIA NECESSÁRIA: \033[1;33m7.0\033[m')

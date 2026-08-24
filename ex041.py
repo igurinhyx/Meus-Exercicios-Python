@@ -27,7 +27,7 @@ elif (hoje - ano_nascimento) <= 14:
     print('O atleta {} é \033[1;36mINFANTIL\033[m'.format(nome_atleta[0]))
 elif (hoje - ano_nascimento) <= 19:
     print('O atleta {} é \033[1;36mJUNIOR\033[m'.format(nome_atleta[0]))
-elif (hoje - ano_nascimento) <= 20:
+elif (hoje - ano_nascimento) >= 20:
     print('O atleta {} é \033[1;36SÊNIOR\033[m'.format(nome_atleta[0]))
 else:
     print('O atleta {} é \033[1;36mSÊNIOR\033[m'.format(nome_atleta[0]))

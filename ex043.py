@@ -36,7 +36,7 @@ print ('\033[1;33m-=-\033[m'*20)
 time.sleep(10)
 
 #CALCULO do IMC
-imc = peso_kg / (altura_m * altura_m)
+imc = peso_kg / (altura_m ** 2)
 
 #Condições pra retorno
 if imc < 18.5:
