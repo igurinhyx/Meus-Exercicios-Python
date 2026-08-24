@@ -43,7 +43,8 @@ elif escolha == 4:
     print('\033[1;33m-=-\033[m' * 20)
     time.sleep(2)
     print('\033[1mVALOR TOTAL: {:.2f}R$\033[m'.format((preco_produto / quantidade_vezes) + (20/100 * preco_produto)))
-
+else:
+    print('OPÇÃO INVALIDA! TENTE NOVAMENTE.')
 
 
 
