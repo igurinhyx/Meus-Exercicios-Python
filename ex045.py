@@ -49,7 +49,7 @@ elif escolha_jogador == 2 and escolha_computador == 1 or escolha_jogador == 3 an
         print('Eu escolhi \033[1;33mTesoura BOBÃO\033[m')
     else:
         print('Eu escolhi \033[1;31mPedra BOBÃO\033[m')
-elif escolha_jogador == 3 and escolha_computador == 1 or escolha_jogador == 2 and escolha_computador == 1 or escolha_jogador == 1 and escolha_computador == 2:
+elif escolha_jogador == 3 and escolha_computador == 1 or escolha_jogador == 1 and escolha_computador == 2 or escolha_jogador == 2 and escolha_computador == 3:
     print('\033[1;32mAnão... você ganhou... :(\033[m')
     if escolha_computador == 3:
         print('Eu escolhi \033[1;35mPapel... maldito!\033[m')
