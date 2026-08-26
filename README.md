@@ -29,7 +29,7 @@ Clone o repositório e execute qualquer arquivo com o Python instalado:
 
 ```bash
 git clone https://github.com/igurinhyx/Meus-Exerc-cios-Python.git
-cd Meus-Exerc-cios-Python
+cd Meus-Exercicios-Python
 python ex001.py
 ```
 
