@@ -18,13 +18,13 @@ while num_jogador != computador:
     tentativas += 1
     if num_jogador == computador:
         print('\033[1;32mCONGRAGULATIONSSS!!\033[m Você só precisou de {} tentaivas! '.format(tentativas))
-    else:
+    elif
         print('\033[1;31mPEEESSIMOOOO!!\033[m Tenta de novo!!!'.format(computador))
-        if tentativas > 3:
+    elif tentativas > 3:
             print('\033[1;31mErrou de novo\033[m, era de se esperar né? Vou te dar outra chance...')
-        elif tentativas > 5:
+    elif tentativas > 5:
             print('\033[1;31mSeu talento para adivinhar\033[m as coisas é de berço, só \033[1;31mfaltou nascer!\033[m')
-        elif tentativas > 7:
+    elif tentativas > 7:
             print('\033[1;31mMermão, MELHORE!!\033[m')
-        elif tentativas > 9:
+    elif tentativas > 9:
             print('\033[1;31mDEPOIS DE TER CHUTADO TODOS OS NÚMEROS É FACIL!!!\033[m')
