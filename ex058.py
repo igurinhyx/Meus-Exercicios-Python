@@ -15,7 +15,7 @@ while num_jogador != computador:
     num_jogador = int(input('Digite aqui: '))
     time.sleep(2)
     if num_jogador == computador:
-        print('\033[1;32mCONGRAGULATIONSSS!!\033[m')
+        print('\033[1;32mMUITO BEM!\033[m')
     else:
-        print('\033[1;31mPEEESSIMOOOO!!\033[m Tenta de novo!!!'.format(computador))
+        print('\033[1;31mNão foi dessa vez...\033[m')
     
