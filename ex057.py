@@ -1,14 +1,8 @@
-genero = ''
-while genero != 'M' and genero != 'F':
-    genero = str(input('''Qual seu sexo? [M / F]
-    Digite aqui: ''')).upper().strip()
-    if genero == 'M':
-        genero = 'Masculino'
-        print('Anotado: {}'.format(genero))
-    elif genero == 'F':
-        genero = 'Feminino'
-        print('Anotado: {}'.format(genero))
-    else:
-        print('Errado, tente novamente! ')
-print('FIM')
-
+sexo = str(input('[M / F] informe seu sexo: ')).strip().upper()[0]
+while sexo not in 'MF':
+    sexo = str(input('Dados invalidos, digite novamente: ')).strip().upper()[0]
+if sexo == 'F':
+    sexo = 'Feminino'
+else:
+    sexo = 'Masculino'
+print('Sexo listado com sucesso: {}'.format(sexo))
