@@ -18,12 +18,16 @@ while not acertou:
     tentativas += 1
     if num_computador == num_jogador:
         acertou = True
-        print('Boa!')
+        print('Boa! Acertou com {} tentativas'.format(tentativas))
     elif num_computador != num_jogador:
         if 0 <= tentativas <= 4:
             print('Tenta de novo!! ')
         elif 4 < tentativas <= 8:
             print('Caraca! Acerta isso logo')
-        else:
+        elif tentativas > 8:
             print('Agora que você acerta né...')
+        if num_computador > num_jogador:
+            print('Meu número é maior do que o seu...')
+        if num_computador < num_jogador:
+            print('Meu número é menor que o seu...')
 
