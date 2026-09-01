@@ -1,12 +1,12 @@
 qtd_homens = 0
-qtd_mulheres = 0
-sexo_certo_homens = 'Indefinido'
-sexo_certo_mulheres = 'Indefinido'
-somaidade = 0
 mediaidade = 0
 maioridade_homem = 0
 nome_homem_maior = ''
 totmulher20 = 0
+qtd_mulheres = 0
+sexo_certo_homens = 'Indefinido'
+sexo_certo_mulheres = 'Indefinido'
+somaidade = 0
 for p in range (1, 5):
     print('\033[1;31m-=-\033[m'*10, '\033[1m{}ª PESSOA\033[m'.format(p), '\033[1;31m-=-\033[m'*10)
     nome = str(input('NOME: ')).strip().title()

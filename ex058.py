@@ -1,21 +1,29 @@
 from random import randint
 import time
-computador = randint(0, 10)
+num_computador = randint(0, 10)
 num_jogador = 0
+tentativas = 0
+acertou = False
 print('-=-'*20)
 print('\033[1;33mVou pensar em um número entre 0 e 10, tente adivinhar!\033[m')
 print('-=-'*20)
-time.sleep(3)
+time.sleep(2)
 print('\033[1;31m-=-\033[m'*20)
 print('\033[1;33mPENSANDO...\033[m')
 print('\033[1;31m-=-\033[m'*20)
-time.sleep(7)
+time.sleep(4)
 print('Qual numero eu pensei?')
-while num_jogador != computador:
+while not acertou:
     num_jogador = int(input('Digite aqui: '))
-    time.sleep(2)
-    if num_jogador == computador:
-        print('\033[1;32mMUITO BEM!\033[m')
-    else:
-        print('\033[1;31mNão foi dessa vez...\033[m')
-    
+    tentativas += 1
+    if num_computador == num_jogador:
+        acertou = True
+        print('Boa!')
+    elif num_computador != num_jogador:
+        if 0 <= tentativas <= 4:
+            print('Tenta de novo!! ')
+        elif 4 < tentativas <= 8:
+            print('Caraca! Acerta isso logo')
+        else:
+            print('Agora que você acerta né...')
+
