@@ -1,8 +1,9 @@
 import random
-
+jogador = ' '
 vitorias = 0
 while True:
-    jogador = str(input('Escolha Par ou Impar [P / I]: ')).strip().upper()[0]
+    while jogador not in 'PI':
+        jogador = str(input('Escolha Par ou Impar [P / I]: ')).strip().upper()[0]
     if jogador == 'P':
         jogador = 'Par'
         computador = 'Impar'
@@ -27,5 +28,6 @@ while True:
         vitorias += 1
     else:
         break
+print(f'Eu escolhi {num_computador} você {num_jogador} e a soma deu {soma}')
 print(f'Bom, você perdeu e teve um total de {vitorias} vitorias')
 
