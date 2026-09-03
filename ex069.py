@@ -4,10 +4,12 @@ cont_feminino = 0
 cont_idade = 0
 cont_idade_mulheres = 0
 while True:
-    idade = int(input('Digite a idade: '))
+    print('\033[1;31m_\033[m'*30)
+    idade = int(input('\033[1mDigite a\033[m \033[1;32midade:\033[m '))
     if idade > 18:
         cont_idade += 1
-    sexo = str(input('Sexo [M / F]: ')).strip().upper()[0]
+    print('\033[1;31m_\033[m'*30)
+    sexo = str(input('\033[1mSexo\033[m \033[1;32m[M / F]:\033[m ')).strip().upper()[0]
     if sexo == 'M':
         sexo = 'Masculino'
         cont_masculino += 1
@@ -25,8 +27,8 @@ while True:
         sexo_certo_mulheres = 'Mulher'
     if idade < 20 and sexo == 'Feminino':
         cont_idade_mulheres += 1
-
-    escolha = str(input('Quer continuar? [S / N]: ')).strip().upper()[0]
+    print('\033[1;31m_\033[m'*30)
+    escolha = str(input('\033[1;33mQuer continuar?\033[m \033[1m[\033[m\033[1;32mS\033[m \033[1m/\033[m \033[1;31mN\033[m\033[1m]\033[m: ')).strip().upper()[0]
     if   escolha == 'N':
         break
 
