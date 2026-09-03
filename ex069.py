@@ -9,7 +9,7 @@ while True:
     escolha = ' '
     print('\033[1;31m_\033[m'*30)
     idade = int(input('\033[1mDigite a\033[m \033[1;32midade:\033[m '))
-    if idade > 18:
+    if idade >= 18:
         cont_idade += 1
     print('\033[1;31m_\033[m'*30)
     while sexo not in 'MF':
