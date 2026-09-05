@@ -27,6 +27,6 @@ while True:
             print('Digitação invalida, digite [S / N]')
     if escolha == 'N':
         break
-print(f'''O total gasto na compra foi: {soma}R$
-A quantidade de produtos que custam mais de 1,000R$ é: {qtd_prod}
-O nome do produto mais barato é: {nome_menor} que custa {menor}R$''')
+print(f'''\033[1mO total gasto na compra foi:\033[m \033[1;32m{soma}R$\033[m
+A quantidade de produtos que custam mais de 1,000R$ é: \033[1;32m{qtd_prod}\033[m
+O nome do produto mais barato é: \033[1;32m{nome_menor}\033[m que custa {menor}R$\033[m''')
