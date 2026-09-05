@@ -3,7 +3,7 @@ jogador = ' '
 vitorias = 0
 while True:
     while jogador not in 'PI':
-        jogador = str(input('Escolha Par ou Impar [P / I]: ')).strip().upper()[0]
+        jogador = str(input('\033[1mEscolha\033[m \033[1;35mPar\033[m ou \033[1;36mImpar\033[m \033[1m[\033[m\033[1;35mP\033[m \033[1m/\033[m \033[1;36mI\033[m\033[1m]\033[m: ')).strip().upper()[0]
     if jogador == 'P':
         jogador = 'Par'
         computador = 'Impar'
@@ -11,8 +11,8 @@ while True:
     else:
         jogador = 'Impar'
         computador = 'Par'
-    print(f'Certo! Eu escolho {computador}')
-    print(f'{jogador}, {computador}')
+    print(f'\033[1;32mCerto!\033[m \033[1mEu escolho\033[m \033[1;34m{computador}\033[m')
+    print(f'\033[1;35m{jogador}\033[m, \033[1;36m{computador}\033[m')
 
     num_computador = random.randint(0, 10)
     num_jogador = int(input('Escolhe seu numero: '))
