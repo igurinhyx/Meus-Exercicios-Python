@@ -19,15 +19,15 @@ while True:
     soma = num_computador + num_jogador
 
     if jogador == 'Par' and soma % 2 == 0:
-        print('Você venceu! Boa!')
-        print(f'Eu escolhi {num_computador}, você escolheu {num_jogador} e a soma deu {soma}')
+        print('\033[1;32mVocê venceu!\033[m \033[1;32mBoa!\033[m')
+        print(f'\033[1mEu escolhi\033[m \033[1;33m{num_computador}\033[m, \033[1mvocê escolheu\033[m \033[1;33m{num_jogador}\033[m \033[1me a soma deu\033[m \033[1;32m{soma}\033[m')
         vitorias +=1
     elif jogador == 'Impar' and soma % 2 != 0:
-        print('Você venceu! Nice!')
-        print(f'Eu escolhi {num_computador}, você escolheu {num_jogador} e a soma deu {soma}')
+        print('\033[1;32mVocê venceu!\033[m Nice!')
+        print(f'\033[1mEu escolhi\033[m \033[1;33m{num_computador}\033[m, \033[1mvocê escolheu\033[m \033[1;33m{num_jogador}\033[m \033[1me a soma deu\033[m \033[1;32m{soma}\033[m')
         vitorias += 1
     else:
         break
-print(f'Eu escolhi {num_computador} você {num_jogador} e a soma deu {soma}')
-print(f'Bom, você perdeu e teve um total de {vitorias} vitorias')
+print(f'\033[1mEu escolhi\033[m \033[1;33m{num_computador}\033[m, \033[1mvocê\033[m \033[1;33m{num_jogador}\033[m \033[1me a soma deu\033[m \033[1;31m{soma}\033[m')
+print(f'\033[1;31mVocê perdeu\033[m e teve um total de \033[1;32m{vitorias} vitorias\033[m')
 
