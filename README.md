@@ -19,8 +19,9 @@ Os exercícios estão organizados por tema, seguindo a progressão do curso:
 | `ex022` a `ex027`  | Manipulação de caracteres (strings)  |
 | `ex028` a `ex035`  | Condições (PARTE 1) if e else        |
 | `ex036` a `ex045`  | Condições (PARTE 2) if, elif e else  |
-| `ex046` a `ex056`  | Estrutura de repetição ( FOR )       |
-| `ex 057` a `ex071` | Estrutura de repetição (WHILE)       |
+| `ex046` a `ex056`  | Estrutura de repetição ( For )       |
+| `ex 057` a `ex071` | Estrutura de repetição ( While )     |
+| `ex 072` a `ex077` | Variáveis compostas ( Tuple )        |
 
 > Este README será atualizado conforme novos exercícios forem adicionados.
 
