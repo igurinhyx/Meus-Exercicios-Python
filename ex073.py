@@ -5,6 +5,7 @@ ordem = sorted(times)
 ultimo = 'Chapecoense'
 
 while True:
+    print('\033[1;32m=\033[m' * 35)
     print('Escolha uma das opções à seguir: ')
     print('''
 \033[1;34m[a]\033[m \033[1mOs 20 times do Brasileirão\033[m
@@ -16,23 +17,22 @@ while True:
     print(' ')
     print('\033[1;32m=\033[m' * 35)
     escolha = str(input('\033[1;34mDigite aqui: \033[m')).strip().lower()[0]
-    print('\033[1;32m=\033[m' * 35)
     if escolha == 'a':
         for cont in range (len(times)):
-            print((cont + 1), times[cont])
+            print(f'\033[1;35m{cont + 1}\033[m \033[1;36m{times[cont]}\033[m')
     elif escolha == 'b':
         for cont in range (len(colocados)):
-            print(f'Em {cont+1}º lugar, {colocados[cont]}')
+            print(f'\033[1mEm\033[m \033[1;35m{cont+1}º lugar\033[m, \033[1;36m{colocados[cont]}\033[m')
     elif escolha == 'c':
         cont_1 = 16
         for cont in range (len(colocados_4)):
             cont_1 += 1
-            print(f'Em {cont_1}º lugar, {colocados_4[cont]}')
+            print(f'\033[1mEm\033[m \033[1;35m{cont_1}º lugar\033[m, \033[1;36m{colocados_4[cont]}\033[m')
     elif escolha == 'd':
         for cont in range(len(ordem)):
-            print(f'{ordem[cont]}')
+            print(f'\033[1;36m{ordem[cont][0]}\033[m\033[1m{ordem[cont][1:]}\033[m')
     elif escolha == 'e':
-        print(f'O ultimo colocado foi: {ultimo}')
+        print(f'\033[1mO\033[m \033[1;31multimo colocado\033[m \033[1mfoi:\033[m \033[1;31m{ultimo}\033[m')
     elif escolha == 'f':
         break
 print('FIM')
