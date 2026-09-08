@@ -6,7 +6,7 @@ ultimo = 'Chapecoense'
 
 while True:
     print('\033[1;32m=\033[m' * 35)
-    print('Escolha uma das opções à seguir: ')
+    print('\033[1;33mEscolha\033[m uma das opções à seguir:')
     print('''
 \033[1;34m[a]\033[m \033[1mOs 20 times do Brasileirão\033[m
 \033[1;34m[b]\033[m \033[1mOs 5 primeiros colocados\033[m
