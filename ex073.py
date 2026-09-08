@@ -35,7 +35,7 @@ while True:
         print(f'\033[1mO\033[m \033[1;31multimo colocado\033[m \033[1mfoi:\033[m \033[1;31m{ultimo}\033[m')
     elif escolha == 'f':
         break
-print('FIM')
-print('\033[1;32m=\033[m' * 25)
+print('\033[1;31mFIM\033[m')
+print('\033[1;32m=\033[m' * 35)
 
 
