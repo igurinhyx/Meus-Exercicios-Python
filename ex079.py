@@ -5,6 +5,7 @@ while True:
     valor = int(input('Digite um numero: '))
     if valor not in lista:
         lista.append(valor)
+        print('Valor adicionado!')
     else:
         print('O valor que você digitou, já está na lista! Por favor, digite outro')
 
