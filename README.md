@@ -22,7 +22,7 @@ Os exercícios estão organizados por tema, seguindo a progressão do curso:
 | `ex046` a `ex056`  | Estrutura de repetição ( For )         |
 | `ex057` a `ex071`  | Estrutura de repetição ( While )       |
 | `ex072` a `ex077`  | Variáveis compostas ( Tuple )          |
-| `ex078` a `ex086`  | Variaveis compostas ( Listas )         | 
+| `ex078` a `ex083`  | Variaveis compostas ( Listas parte 1 ) | 
 
 > Este README será atualizado conforme novos exercícios forem adicionados.
 
