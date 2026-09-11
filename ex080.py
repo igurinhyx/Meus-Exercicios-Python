@@ -1,14 +1,15 @@
 lista = []
-maior = 0
-menor = 0
-for c in range(0, 5):
-    valor = lista.append(int(input('Digite um valor: ')))
-    if c == 1:
-        maior = menor = valor
-        if valor > maior:
-            lista.insert(c,valor)
-        if valor < menor:
-            lista.insert(c, valor)
 
+for c in range(0, 5):
+    valor = (int(input('Digite um valor: ')))
+    if c == 0 or valor > lista[-1]:
+        lista.append(valor)
+    else:
+        pos = 0
+        while pos < len(lista):
+            if valor <= lista[pos]:
+                lista.insert(pos, valor)
+                break
+        pos += 1
 
 print(lista)
