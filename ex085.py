@@ -1,19 +1,15 @@
-lista = list()
+num = [[], []]
 
-for c in range (0, 7):
-    lista.append(int(input('Digite um numero: ')))
+for c in range (1, 8):
+    valor = (int(input(f'Digite o {c}° numero: ')))
+    if valor % 2 == 0:
+        num[0].append(valor)
+    else:
+        num[1].append(valor)
 
-lista.sort()
+num[0].sort()
+num[1].sort()
+print(f'Os numeros pares: {num[0]} ', end= ' ')
 
-print('Os numeros pares: ', end= ' ')
-for c in lista:
-    if c % 2 == 0:
-        print(c, end= ' ')
 print()
-print('Os numeros impares: ', end= ' ')
-for c in lista:
-    if c % 2 != 0:
-        print(c, end= ' ')
-print()
-
-print(f'A lista é: {lista}')
+print(f'Os numeros impares: {num[1]}', end= ' ')
