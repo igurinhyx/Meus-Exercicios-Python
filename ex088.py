@@ -1,19 +1,14 @@
-import random
-contagem = 0
+from random import randint
+cont = 0
 lista = list()
-num = list()
-escolha = int(input('Quantos jogos você vai querer? '))
 
+quantidade = int(input('Digite a quantidade de jogos que você precisa: '))
 while True:
-    for c in range(0, escolha):
-        for p in range(0, 6):
-            num.append(random.randint(0, 60))
-            while num not in lista:
-                    lista.append(num[:])
-            num.clear()
-
-    contagem += 1
-    if contagem == escolha:
+    num = randint(1, 60)
+    if num not in lista:
+        lista.append(num)
+        cont += 1
+    if cont >= 6:
         break
 print(lista)
 
