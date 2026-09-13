@@ -15,7 +15,10 @@ for l in range(0, 3):
 print(spares)
 print(matriz[0][2]+matriz[1][2]+matriz[2][2])
 
-for l, matriz[1][] in range(0, 3):
-    if l > matriz[1][l]:
-        maior = l
+for c in range(0,3):
+    if c == 0:
+        maior = matriz[1][c]
+    else:
+        if matriz[1][c] > maior:
+            maior = matriz[1][c]
 print(maior)
