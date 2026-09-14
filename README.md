@@ -24,6 +24,7 @@ Os exercícios estão organizados por tema, seguindo a progressão do curso:
 | `ex072` a `ex077`  | Variáveis compostas ( Tuple )           |
 | `ex078` a `ex083`  | Variaveis compostas ( Listas, parte 1 ) | 
 | `ex084` a `ex089`  | Variaveis compostas ( Listas, parte 2   |
+| `ex090` a `ex095`  | Variaveis compostas ( Dicionários )     |
 > Este README será atualizado conforme novos exercícios forem adicionados.
 
 ## ▶️ Como executar
