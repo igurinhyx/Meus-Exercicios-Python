@@ -15,4 +15,4 @@ for k, v in jogo.items():
     sleep(1)
 ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
 for i, v in enumerate(ranking):
-    print(f'O {i+1}° lugar vai para o: {v[0]} com {v[1]}')
+    print(f'O \033[1;33m{i+1}° lugar\033[m vai para o: \033[1;32m{v[0]}\033[m com \033[1;35m{v[1]}\033[m')
