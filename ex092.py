@@ -1,12 +1,11 @@
-import datetime
+from datetime import datetime
 ficha = dict()
-
-anoatual = datetime.date.today().year
 
 while True:
     ficha['Nome'] = str(input('Nome: '))
-    ficha['Ano de nascimento'] = int(input('Ano de nascimento: '))
-    ficha['CTPS'] = int(input('Carteira de trabalho [ 0 não tem ]: '))
+    nascimento = int(input('Digite seu ano de nascimento: '))
+    ficha['idade'] = datetime.now().year - nascimento
+    ficha['CTPS'] = int(input('Carteira de trabalho, \033[1;33m[\033[m \033[1;31m0 não tem\033[1m \033[1;33m]\033[m: '))
     if ficha['CTPS'] == 0:
         break
     else:
@@ -16,17 +15,6 @@ while True:
         escolha = str(input('Digite [F] para finalizar: ')).strip().upper()[0]
         if escolha == 'F':
             break
-if ficha['CTPS'] == 0:
-    print(f'Nome: {ficha["Nome"]}')
-    print(f'Idade: {anoatual - ficha["Ano de nascimento"]}')
-    print(f'CTPS: Não possui.')
-else:
-    print(f'Nome: {ficha["Nome"]}')
-    print(f'Idade: {anoatual - ficha["Ano de nascimento"]}')
-    print(f'CTPS: {ficha["CTPS"]}')
-    print(f'Ano de contratação: {ficha["Ano de contratacao"]}')
-    print(f'Salário: {ficha["Salario"]}')
-    print(f'Anos de serviço: {anoatual - ficha["Ano de contratacao"]}')
 
 
 
