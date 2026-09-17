@@ -17,9 +17,14 @@ while True:
     if ficha['sexo'] == 'Feminino':
         mulheres.append(ficha.copy())
     lista.append(ficha.copy())
-    escolha = str(input('Digite [F] para finalizar: ')).strip().upper()[0]
-    if escolha == 'F':
+    escolha = str(input('Digite [S/N]: ')).strip().upper()[0]
+    if escolha == 'N':
         break
+    else:
+        if escolha != 'S':
+            print('Por favor, digite S ou N')
+
+
 
 
 
