@@ -13,7 +13,7 @@ if ficha['CTPS'] != 0:
     print()
 print('=='*20)
 for k, v in ficha.items():
-    print(f'{k}: {v}')
+    print(f'\033[1m{k}: {v}\033[m')
 print('=='*20)
 
 
