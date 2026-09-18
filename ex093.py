@@ -16,4 +16,4 @@ print()
 print(f'O {jogador["Nome"]} jogou: {len(partidas)} partidas')
 print()
 for i, v in enumerate(jogador['Gols']):
-    print(f'Na {i + 1}° partida, o {jogador["Nome"]} marcou {v} gols.')
+    print(f'Na \033[1;32m{i + 1}° partida\033[m, o \033[m1;35m{jogador["Nome"]}\033[m marcou \033[1;32m{v} gols.\033[m')
