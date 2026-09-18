@@ -11,7 +11,7 @@ print()
 print(jogador)
 print()
 for k, v in jogador.items():
-    print(f'{k}: {v}')
+    print(f'\033[1m{k}: {v}\033[m')
 print()
 print(f'O {jogador["Nome"]} jogou: {len(partidas)} partidas')
 print()
