@@ -24,6 +24,7 @@ while True:
         if escolha != 'S':
             print('Por favor, digite S ou N')
 
+#CODIGO INVALIDO ( VOU CORRIGIR ELE )
 
 
 
