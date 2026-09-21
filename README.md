@@ -1,6 +1,6 @@
 # 🐍 Meus Exercícios de Python
 
-Repositório com os exercícios resolvidos durante o **Curso em Vídeo** do professor **Gustavo Guanabara**, focado no aprendizado da linguagem Python desde o básico.
+Repositório com os exercícios resolvidos durante o **Curso em Vídeo** do professor **Gustavo Guanabara**, focado no aprendizado da linguagem Python desde o básico até o avançado. São mais de 120 exercícios e um curso extremamente valioso. 
 
 ## 📚 Sobre o curso
 
