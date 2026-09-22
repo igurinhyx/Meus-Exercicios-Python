@@ -1,6 +1,9 @@
 galera = list()
 pessoa = dict()
+mulheres = list()
 cont = 0
+soma = 0
+
 while True:
     pessoa.clear()
     pessoa['Nome'] = str(input('Nome: '))
@@ -18,8 +21,11 @@ while True:
         pessoa['Sexo'] = 'Masculino'
 
     pessoa['Idade'] = int(input('Idade: '))
+    soma += pessoa['Idade']
     galera.append(pessoa.copy())
     cont += 1
+    if pessoa['Sexo'] == 'Feminino':
+        mulheres.append(pessoa.copy())
     while True:
         escolha = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
         if escolha not in 'SN':
@@ -30,7 +36,8 @@ while True:
         break
 
 
-
+print(f'A media das idades é: {soma/cont}')
 print(pessoa)
 print(galera)
 print(cont)
+print(f'Mulheres{mulheres}')
