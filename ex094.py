@@ -35,9 +35,40 @@ while True:
     if escolha == 'N':
         break
 
+print()
+print('=='*20)
+print(f'[A] A media das idades é: {(soma/cont):.2f}')
+print('=='*20)
+print()
 
-print(f'A media das idades é: {soma/cont}')
-print(pessoa)
-print(galera)
-print(cont)
-print(f'Mulheres{mulheres}')
+print('=='*20)
+print(f'[B] A lista:')
+for p in galera:
+    for k, v in p.items():
+        print(f'{k} | {v}')
+print('=='*20)
+print()
+print('=='*20)
+print(f'[C] Quantidade de pessoas: {cont}')
+print('=='*20)
+print()
+
+print('=='*20)
+print(f'Lista de mulheres:')
+for p in mulheres:
+    for k, v in p.items():
+        print(f'{k} | {v}')
+print('=='*20)
+print()
+print('=='*20)
+print('[D] Quem tem idade acima da media: ')
+for p in galera:
+    if p["Idade"] >= (soma/cont):
+        print('     ')
+        for k, v in p.items():
+            print(f'{k} = {v}')
+        print()
+print()
+print('=='*20)
+print('ENCERRADO')
+
