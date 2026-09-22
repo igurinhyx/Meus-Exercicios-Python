@@ -46,6 +46,8 @@ print(f'[B] A lista:')
 for p in galera:
     for k, v in p.items():
         print(f'{k} | {v}')
+    print('_'*10)
+    print()
 print('=='*20)
 print()
 print('=='*20)
@@ -58,6 +60,8 @@ print(f'Lista de mulheres:')
 for p in mulheres:
     for k, v in p.items():
         print(f'{k} | {v}')
+    print('_'*10)
+    print()
 print('=='*20)
 print()
 print('=='*20)
@@ -68,7 +72,5 @@ for p in galera:
         for k, v in p.items():
             print(f'{k} = {v}')
         print()
-print()
 print('=='*20)
 print('ENCERRADO')
-
