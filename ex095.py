@@ -1,12 +1,15 @@
-ficha
+ficha = list()
 jogador = dict()
 gols = list()
-
+cod = 0
 while True:
-    ficha['Nome'] = str(input('Nome do jogador: '))
-    ficha['Partidas'] = int(input(f'Quantidade de partidas do {ficha["Nome"]}: '))
+    gols.clear()
+    cod += 1
+    jogador['Cod'] = cod
+    jogador['Nome'] = str(input('Nome do jogador: '))
+    jogador['Partidas'] = int(input(f'Quantidade de partidas do {jogador["Nome"]}: '))
 
-    for c in range(0, ficha["Partidas"]):
+    for c in range(0, jogador["Partidas"]):
         gol = int(input(f'Quantidade de gols na partida {c+1}: '))
         gols.append(gol)
 
@@ -16,8 +19,8 @@ while True:
             print('Errado! Escreva S ou N')
         else:
             break
-    ficha['Gols'] = gols[:]
-    gols.clear()
+    jogador['Gols'] = gols[:]
+    ficha.append(jogador.copy())
     if escolha == 'N':
         break
 
