@@ -1,16 +1,22 @@
-dicionario = dict
 ficha = dict()
-partidas = dict()
-partidas_lista = []
-soma = 0
-ficha['jogador'] = str(input('Nome (jogador): '))
-ficha['partidas'] = int(input('Partidas jogadas: '))
-for c in range(ficha['partidas']):
-    partidas['gols'] = int(input(f'Digite o valor de gols da {c+1}° partida: '))
-    partidas_lista.append(partidas['gols'])
-    soma += partidas['gols']
-dicionario.copy(ficha)
+gols = list()
+
+while True:
+    jogador = str(input('Nome do jogador: '))
+    total_pt = int(input(f'Quantidade de partidas do {jogador}: '))
+
+    for c in range(0, total_pt):
+        gol = int(input(f'Quantidade de gols na partida {c+1}: '))
+        gols.append(gol)
+
+    while True:
+        escolha = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+        if escolha not in 'SN':
+            print('Errado! Escreva S ou N')
+        else:
+            break
+    gols.clear()
+    if escolha == 'N':
+        break
 
 
-print(soma)
-print(dicionario)
