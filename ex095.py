@@ -25,3 +25,7 @@ while True:
         break
 
 print(ficha)
+
+for p in ficha:
+    for k, v in p.items():
+        print(f'\033[1;35m{k}\033[m | \033[1;32m<-------->\033[m | \033[1;36m{v}\033[m')
