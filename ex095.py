@@ -1,11 +1,8 @@
 ficha = list()
 jogador = dict()
 gols = list()
-cod = 0
 while True:
     gols.clear()
-    cod += 1
-    jogador['Cod'] = cod
     jogador['Nome'] = str(input('Nome do jogador: '))
     jogador['Partidas'] = int(input(f'Quantidade de partidas do {jogador["Nome"]}: '))
 
@@ -19,13 +16,34 @@ while True:
             print('Errado! Escreva S ou N')
         else:
             break
+    jogador['Total'] = sum(gols)
     jogador['Gols'] = gols[:]
     ficha.append(jogador.copy())
     if escolha == 'N':
         break
+print()
+print('=='*40)
+print('Cod  ', end= '')
+for i in jogador.keys():
+    print(f'{i:<15}', end= '')
+print()
+for k, v in enumerate(ficha):
+    print(f'{k:>3}  ', end= '')
+    for d in v.values():
+        print(f'{str(d):<15}', end= '')
+    print()
+print('=='*40)
+while True:
+    resposta = int(input('Digite o numero do jogador que desejar OU [999 para parar]: '))
+    if resposta == 999:
+        break
+    if resposta >= len(ficha):
+        print('Erro! Esse jogador não existe.')
+    else:
+        print(f' | LEVANTAMENTO DO JOGADOR {ficha[resposta]["Nome"]} | ')
+        for i, g in enumerate(ficha[resposta]['Gols']):
+            print(f'No {i+1}° jogo, fez {g} gols.')
+    print('=='*40)
+print('<< ENCERRADO >>')
 
-print(ficha)
 
-for p in ficha:
-    for k, v in p.items():
-        print(f'\033[1;35m{k}\033[m | \033[1;32m<-------->\033[m | \033[1;36m{v}\033[m')
