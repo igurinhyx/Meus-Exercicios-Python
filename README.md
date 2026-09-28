@@ -25,7 +25,8 @@ Os exercícios estão organizados por tema, seguindo a progressão do curso:
 | `ex078` a `ex083`   | Variaveis compostas ( Listas, parte 1 ) | 
 | `ex084` a `ex089`   | Variaveis compostas ( Listas, parte 2   |
 | `ex090` a `ex095`   | Variaveis compostas ( Dicionários )     |
-| `ex096` a `ex106`   | Funções ( Parte 1 e 2 )                 |
+| `ex096` a `ex100`   | Funções ( Parte 1 )                     |
+| `ex101` a `ex106`   | Funções ( Parte 2 )                     |
 > Este README será atualizado conforme novos exercícios forem adicionados.
 
 ## ▶️ Como executar
