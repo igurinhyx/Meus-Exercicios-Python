@@ -1,9 +1,9 @@
 def escreva(msg):
-    print('-'*(len(msg)+4))
+    print('\033[1;35m-\033[m'*(len(msg)+4))
     print(msg)
-    print('-'*(len(msg)+4))
+    print('\033[1;35m-\033[m'*(len(msg)+4))
 
 
-escreva('  IGOR  ')
+escreva('  \033[1;34mIGOR\033[m  ')
 print()
-escreva('  CURSO DE PROGRAMAÇÃO  ')
+escreva('  \033[1;34mCURSO DE PROGRAMAÇÃO\033[m  ')
