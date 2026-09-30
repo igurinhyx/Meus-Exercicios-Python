@@ -1,9 +1,9 @@
 import time
 
 def titulo(msg):
-    print('-'*(len(msg)+4))
+    print('\033[1;33m-\033[m'*(len(msg)+4))
     print(msg)
-    print('-'*(len(msg)+4))
+    print('\033[1;33m-\033[m'*(len(msg)+4))
 
 def jogador(comeco, vai, pulando):
     if pulando == 0:
@@ -19,13 +19,13 @@ def jogador(comeco, vai, pulando):
         time.sleep(0.5)
     print('FIM!')
 
-titulo('  CONTADOR 1 - 10 - 1  ')
+titulo('  \033[1;31mCONTADOR 1 - 10 - 1\033[m  ')
 jogador(1, 10, 1)
 
-titulo('  CONTADOR 10 - 0 - 2  ')
+titulo('  \033[1;31mCONTADOR 10 - 0 - 2\033[m  ')
 jogador(10, 0, -2)
 
-titulo('  AGORA O SEU CONTADOR!  ')
+titulo('  \033[1;31mAGORA O SEU CONTADOR!\033[m  ')
 comc = int(input('Começa do numero: '))
 v = int(input('Vai até o numero: '))
 pul = int(input('Pulando de: '))
