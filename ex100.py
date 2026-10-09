@@ -8,9 +8,23 @@ def sorteio(lista):
         print(f'{n}', end= ' ')
         sleep(0.5)
 
+def somapar(lista):
+    soma = 0
+    pares = list()
+    for valor in lista:
+        if valor % 2 == 0:
+            soma += valor
+            pares.append(valor)
+    print(f'A soma dos pares vale: {soma}')
+    print(f'Os números pares são: ', end= ' ')
+    for valor in pares:
+        print(f'{valor}', end= ' ')
+        sleep(0.5)
 
 numeros = list()
-print('Sorteando...')
+print('Os numeros sorteados são:', end= ' ')
 sorteio(numeros)
-print('[ Pronto! ]', end= '')
-
+sleep(1)
+print()
+somapar(numeros)
+sleep(1)
