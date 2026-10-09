@@ -1,6 +1,12 @@
 from random import randint
 from time import sleep
 
+def titulo(msg):
+    print('\033[1;31m-=-\033[m'*20)
+    print(msg)
+    print('\033[1;31m-=-\033[m'*20)
+
+
 def sorteio(lista):
     for c in range(0, 5):
         n = randint(0, 10)
@@ -23,7 +29,9 @@ def somapar(lista):
         sleep(0.5)
 
 numeros = list()
+titulo('SORTEIO DOS NUMEROS')
 print('\033[35mOs numeros sorteados são:\033[m', end= ' ')
 sorteio(numeros)
 print()
+titulo('SOMA DOS PARES')
 somapar(numeros)
