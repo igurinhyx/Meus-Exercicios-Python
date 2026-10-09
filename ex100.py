@@ -5,7 +5,7 @@ def sorteio(lista):
     for c in range(0, 5):
         n = randint(0, 10)
         lista.append(n)
-        print(f'{n}', end= ' ')
+        print(f'\033[1;32m{n}\033[m', end= ' ')
         sleep(0.5)
 
 def somapar(lista):
@@ -15,16 +15,15 @@ def somapar(lista):
         if valor % 2 == 0:
             soma += valor
             pares.append(valor)
-    print(f'A soma dos pares vale: {soma}')
+    print(f'A soma dos pares vale: \033[1;32m{soma}\033[m')
+    sleep(1)
     print(f'Os números pares são: ', end= ' ')
     for valor in pares:
-        print(f'{valor}', end= ' ')
+        print(f'\033[1;32m{valor}\033[m', end= ' ')
         sleep(0.5)
 
 numeros = list()
 print('Os numeros sorteados são:', end= ' ')
 sorteio(numeros)
-sleep(1)
 print()
 somapar(numeros)
-sleep(1)
